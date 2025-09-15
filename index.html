@@ -1,0 +1,65 @@
+<!-- HTML file with Tailwind CSS classes added based on your App.css styles -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shoe Store</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    :root {
+      --red: #d01c28;
+      --gray: #2e2e2e;
+    }
+    .font-poppins { font-family: 'Poppins', sans-serif; }
+    .bg-red-custom { background-color: #d01c28; }
+    .text-gray-custom { color: #2e2e2e; }
+    .border-gray-custom { border-color: #2e2e2e; }
+  </style>
+</head>
+<body class="font-poppins">
+
+  <nav class="container mx-auto max-w-[1280px] flex justify-between items-center h-[72px]">
+    <div class="logo">
+      <img src="/brand_logo.png" alt="logo" />
+    </div>
+    <ul class="flex list-none gap-6">
+      <li><a href="#" class="text-base">Menu</a></li>
+      <li><a href="#" class="text-base">Location</a></li>
+      <li><a href="#" class="text-base">About</a></li>
+      <li><a href="#" class="text-base">Contact</a></li>
+    </ul>
+    <button class="px-4 py-1 h-8 bg-red-custom text-white font-medium rounded">login</button>
+  </nav>
+
+
+<main class="hero container mx-auto max-w-[1280px] flex items-center h-[calc(100vh-72px)] mt-10">
+    <div class="hero-content flex flex-col gap-9">
+      <h1 class="font-extrabold leading-[102px] text-[108px]">YOUR FEET DESERVE THE BEST</h1>
+      <p class="font-semibold text-gray-custom max-w-[400px]">
+        YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR
+        SHOES.YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR
+        SHOES.
+      </p>
+      <div class="hero-btn flex gap-10">
+        <button class="text-2xl px-4 py-1 h-8 bg-red-custom text-white font-medium rounded">Shop Now</button>
+        <button class="text-2xl px-4 py-1 h-8 bg-transparent text-gray-custom border border-gray-custom font-medium rounded">Category</button>
+      </div>
+      <div class="shopping">
+        <p class="text-sm mb-2">Also Available On</p>
+        <div class="brand-icons flex gap-4">
+          <img src="/amazon.png" alt="amazon-logo" />
+          <img src="/flipkart.png" alt="flipkart-logo" />
+        </div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="/hero-image.png" alt="hero-image" />
+    </div>
+  </main>
+</body>
+</html>
